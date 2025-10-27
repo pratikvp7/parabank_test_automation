@@ -1,4 +1,4 @@
-from src.core.common.driver_constants import *
+from src.core.constants.driver_constants import *
 from selenium import webdriver
 
 
