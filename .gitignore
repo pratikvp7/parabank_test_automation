@@ -1,6 +1,7 @@
 
 .Python
 data
+report
 
 # Python bytecode cache
 __pycache__/

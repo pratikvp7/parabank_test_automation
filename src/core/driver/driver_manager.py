@@ -13,6 +13,7 @@ class DriverManager:
         self.driver.set_page_load_timeout(WEB_PAGE_LOAD_TIMEOUT)
         return self.driver
 
+
     def __connect_selenium_server(self, browser, max_retry=10):
         try:
             for retry in range(max_retry):
