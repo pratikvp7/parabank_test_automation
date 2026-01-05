@@ -22,9 +22,11 @@ class LogUtility:
     def error(self, msg):
         print(f"{self.current_time} [ERROR] {msg}")
 
+    def space(self):
+        print("\n")
+
     def __write_log(self, log_level, msg):
         print(f"{self.current_time} [{log_level}] {msg}")
-
 
 if __name__ == '__main__':
     log = LogUtility()

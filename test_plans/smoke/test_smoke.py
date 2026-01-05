@@ -17,6 +17,13 @@ class TestSmoke:
     def teardown_class(cls):
         cls.global_setup.tear_down()
 
+    def setup_method(self, method):
+        self.log.space()
+        self.log.info(f"Stating test: {method.__name__}")
+
+    def teardown_method(self, method):
+        self.log.info(f"Finished test: {method.__name__}")
+
     def test_header(self):
         title_result = self.actions.login_page.is_parabank_title_displayed()
         assert title_result
