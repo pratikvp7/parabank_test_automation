@@ -4,7 +4,7 @@ from src.core.global_setup import GlobalSetup
 
 
 @pytest.fixture(scope="session", autouse=True)
-def startup_routine():
+def startup_routine(request, driver, log):
     print("[START] Starting up...]")
     global_setup = GlobalSetup()
     global_setup.init()
