@@ -9,3 +9,5 @@ __pycache__/
 *.pyc
 *.class
 .DS_Store
+
+pytest-cache-files-m_87lunz
