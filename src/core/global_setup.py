@@ -10,7 +10,6 @@ class GlobalSetup:
         self.log = LogUtility()
         self.driver_manager = DriverManager(self.log)
 
-
     def init(self):
         self.log.info("Initializing Global Setup")
         self.driver = self.driver_manager.setup_driver()
