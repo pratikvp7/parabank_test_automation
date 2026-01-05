@@ -28,6 +28,7 @@ class LogUtility:
     def __write_log(self, log_level, msg):
         print(f"{self.current_time} [{log_level}] {msg}")
 
+
 if __name__ == '__main__':
     log = LogUtility()
     log.info("Hello")
