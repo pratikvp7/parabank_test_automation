@@ -1,4 +1,5 @@
 from src.application.pages.actions import Actions
+from src.core.conftest import *
 from src.core.global_setup import GlobalSetup
 
 
@@ -24,10 +25,12 @@ class TestSmoke:
     def teardown_method(self, method):
         self.log.info(f"Finished test: {method.__name__}")
 
+    @test_id("SMK-01")
     def test_header(self):
         title_result = self.actions.login_page.is_parabank_title_displayed()
         assert title_result
 
+    @test_id("SMK-02")
     def test_login_page(self):
         login_page_result = self.actions.login_page.is_customer_login_text_displayed()
         assert login_page_result
