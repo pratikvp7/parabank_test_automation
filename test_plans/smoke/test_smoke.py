@@ -41,3 +41,4 @@ class TestSmoke:
         password_result = self.actions.login_page.is_password_field_displayed()
         assert password_result
 
+
