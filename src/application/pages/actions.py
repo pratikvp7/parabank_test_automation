@@ -8,3 +8,7 @@ class Actions:
         self.driver = driver
 
         self.login_page = LoginPageActions(self.log, self.driver)
+
+
+if __name__ == '__main__':
+    print()
